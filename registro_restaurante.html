@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Registro de restaurante | Rápido y sabroso!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Staple Food Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style_modal.css" type="text/css" rel="stylesheet" media="all"> 
+<link href="css/style_formrestaurantes.css" type="text/css" rel="stylesheet" media="all">  
+<link href="css/font-awesome.css" rel="stylesheet"> <!-- font-awesome icons -->
+<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" media="all"/> <!-- Owl-Carousel-CSS -->
+<!-- //Custom Theme files --> 
+<!-- js -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/js_login.js"></script>  
+<!-- //js -->
+<!-- web-fonts -->   
+<link href="//fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> 
+<link href="//fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+<body>
+<!-- header -->
+		<div class="header">
+			<div class="w3ls-header"><!-- header-one --> 
+				<div class="container">
+					<div class="w3ls-header-left">
+						<ul> 
+							<li class="head-dpdn">
+								<i class="fa fa-phone" aria-hidden="true"></i> (868) 000 0000
+							</li>
+							<li class="head-dpdn">
+								<i class="fa fa-envelope" aria-hidden="true"></i> info@rapidoysabroso.com
+							</li>
+						</ul>
+					</div>
+					<div class="w3ls-header-right">
+						<ul> 
+							<li class="head-dpdn">
+								<a href="#modalLogin"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+							</li> 
+							<li class="head-dpdn">
+								<a href="#modalRegistro"><i class="fa fa-user-plus" aria-hidden="true"></i> Regístrate</a>
+							</li> 
+							<li class="head-dpdn">
+								<a href="help.html"><i class="fa fa-question-circle" aria-hidden="true"></i> Ayuda</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div> 
+				</div>
+			</div>
+			<!-- //header-one -->    
+			<!-- navigation -->
+			<div class="navigation agiletop-nav">
+				<div class="container">
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header w3l_logo">
+							<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>  
+							<img href="index.html" src="images/logo.png" class="logo">
+						</div> 
+						<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html">Inicio</a></li>
+								<li><a href="acerca.html">Acerca de</a></li>
+								<li><a href="catalogo_menus.html">Catálogo de menús</a></li>
+								<li><a href="contacto.html">Contáctanos</a></li>  
+							</ul>
+						</div>
+						<div class="cart cart box_1"> 
+							<form action="#" method="post" class="last"> 
+								<input type="hidden" name="cmd" value="_cart" />
+								<input type="hidden" name="display" value="1" />
+								<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+							</form>   
+						</div> 
+					</nav>
+				</div>
+			</div>
+			<!-- //navigation --> 
+		</div>
+		<div class="container">
+
+    <form class="well form-horizontal" enctype="multipart/form-data" action="new_restaurant.php" method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Formulario de registro para restaurantes.</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Nombre del restaurante:</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="name" placeholder="Nombre del restaurante..." class="form-ctrl"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Dirección:</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+  <input  name="address" placeholder="Dirección del restaurante..." class="form-ctrl"  type="text">
+    </div>
+  </div>
+</div>
+
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Categoría</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="category" class="form-ctrl selectpicker" >
+      <option value="" >Seleccionar</option>
+      <option value="saludable">Saludable</option>
+      <option value="mexicana">Comida mexicana</option>
+      <option value="casera">Comida casera</option>
+      <option value="extranjera">Comida extranjera</option>
+      <option value="rapida">Comida rápida</option>
+      <option value="mariscos">Mariscos</option>
+      <option value="postre">Postres</option>
+      <option value="otra">Otra</option>
+      
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Select Basic -->
+   
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Ciudad</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="city" class="form-ctrl selectpicker" >
+      <option value="" >Seleccionar</option>
+      <option value="matamoros">H. Matamoros</option>
+      <option value="reynosa">Reynosa</option>
+    </select>
+  </div>
+</div>
+</div>
+
+<!-- Text area -->
+<div class="form-group"> 
+  <label class="col-md-4 control-label">Estado</label>
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+    <select name="state" class="form-ctrl selectpicker" >
+      <option value="" >Seleccionar</option>
+      <option value="tamaulipas">Tamaulipas</option>
+    </select>
+  </div>
+</div>
+</div>
+<div class="form-group"> 
+<label class="col-md-4 control-label" for="picture">Logotipo</label>
+<div class="col-md-4">
+<input id="picture" name="picture" type="file" accept="image/gif, image/jpeg, image/png">
+</div>
+</div>
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">¡Bien hecho!<i class="glyphicon glyphicon-thumbs-up"></i>Tus datos han sido registrados con éxito.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn btn-warning" >Registrar<span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+</fieldset>
+</form>
+</div>
+    </div><!-- /.container -->
+
+<!-- footer -->
+	<div class="footer agileits-w3layouts">
+		<div class="container">
+			<div class="w3_footer_grids">
+				<div class="col-xs-12 col-sm-3 footer-grids w3-agileits">
+					<h3>Rápido y sabroso</h3>
+					<p>Somos una empresa comprometida que pone a disposición del cliente un completo repertorio de los mejores restaurantes de la ciudad. El tiempo y la distancia ya no son una excusa, ordena ahora de una manera rápida y sencilla ¡Nosotros nos encargamos del resto!</p>
+				</div> 
+				<div class="col-xs-12 col-sm-3 footer-grids w3-agileits">
+					<h3>Navegación</h3>
+					<ul>
+						<li class="head-dpdn">
+							<a href="index.html"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Inicio</a>
+						</li>
+						<li class="head-dpdn">
+							<a href="acerca.html"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Acerca de</a>
+						</li> 
+						<li class="head-dpdn">
+							<a href="catalogo_menus.html"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Catálogo de menús</a>
+						</li> 
+						<li class="head-dpdn">
+							<a href="contacto.html"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Contactános</a>
+						</li>
+						<li class="head-dpdn">
+							<a href="login.html"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i> Login</a>
+						</li>   
+					</ul>  
+				</div>
+				<div class="col-xs-12 col-sm-6 footer-grids w3-agileits">
+					<h3>Contácto rápido</h3>
+					<form>
+						<input type="email" name="name" class="form-control" placeholder="Nombre" required>
+						<textarea name="message" class="form-control" placeholder="Mensaje..." required></textarea>
+						<input id="enviar" type="submit" value="Enviar">
+					</form>  
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div> 
+	</div>
+	<div class="copyw3-agile"> 
+		<div class="container">
+			<p>&copy; 2017 Todos los derechos reservados | <a href="http://w3layouts.com/">Rápido y sabroso!</a></p>
+		</div>
+	</div>
+	<!-- //footer --> 
+	
+	<!--modals-->
+	<div id="modalLogin" class="modalDialog">
+		<div>
+			<form class="login">
+   				<a href="#close" title="Close" class="close">X</a>
+    				<p class="title">Log in</p>
+    				<input type="text" placeholder="Usuario" autofocus/>
+   					<i class="fa fa-user"></i>
+    				<input type="password" placeholder="Contraseña" />
+    				<i class="fa fa-key"></i>
+   					<button>
+      					<i class="spinner"></i>
+      					<span class="state">Log in</span>
+    				</button>
+  				</form>
+		</div>
+	</div>
+	 
+	<div id="modalRegistro" class="modalDialog">
+		<div>
+			<form class="login">
+   				<a href="#close" title="Close" class="close">X</a>
+    				<h1 class="title">Nuevo usuario</h1>
+    				<label>Nombre de usuario: </label>
+    				<input type="text" autofocus/>
+    				<i class="fa fa-user"></i>
+    				<label>Contraseña: </label>
+    				<input type="password"/>
+    				<i class="fa fa-key"></i>
+    				<label>Repetir contraseña: </label>
+    				<input type="password"/>
+    				<i class="fa fa-key"></i>
+   					<button class="registro">
+      					<i class="spinner"></i>
+      					<span class="state">Registrarse</span>
+    				</button>
+  				</form>
+		</div>
+	</div>
+
+	<!--//modals>
+	
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
+    <script src="js/restaurant.js"></script>
+</body>

@@ -1,0 +1,21 @@
+#success_message{
+	display: none;
+}
+
+.form-ctrl{
+	height:30px;
+}
+
+input[name="name"],input[name="address"]{
+	width: 100%;
+}
+
+.well{
+	margin-top: 50px;
+}
+
+legend {
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 50px;
+}
